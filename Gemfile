@@ -1,24 +1,22 @@
 source 'https://rubygems.org'
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-gem 'rails', '4.0.0'
-gem 'sass-rails', '~> 4.0.0'
+ruby '2.6.3'
+
+gem 'rails', '~> 5.2.3'
+gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.0.0'
-gem 'bootstrap-sass', '~> 2.3.2.0'
-
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
-
+gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
-gem 'turbolinks'
-gem 'jbuilder', '~> 1.2'
+gem 'turbolinks', '~> 5'
+gem 'jbuilder', '~> 2.5'
+gem 'bootstrap-sass', '~> 2.3.2.0'
 
 group :doc do
   gem 'sdoc', require: false
 end
 
 group :development do
-  gem 'quiet_assets'
   gem 'pry'
   gem 'sqlite3'
 end
