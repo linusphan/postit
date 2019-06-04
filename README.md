@@ -1,6 +1,8 @@
 ## Overview
 This is a social news and discussion application built using Rails, PostgreSQL,
-and JavaScript.
+and JavaScript. [Heroku link](https://postit-linus.herokuapp.com/) is currently
+down because web dynos have been scaled down to 0 for the moment. Feel free to
+try out the application by setting it up on your local machine.
 
 ## Getting Started
 
