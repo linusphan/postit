@@ -25,3 +25,5 @@ local machine.
 * click on categories tag show only posts associated with that category
 * create new post via form that has form validations
 * can login and logout, as well as register a new user
+* has roles feature with permissions
+* slugs or slugging for URLs
