@@ -1,3 +1,5 @@
+<img width="1155" alt="postit" src="https://user-images.githubusercontent.com/13613724/61484379-b4ab0f80-a953-11e9-8d1e-ceebb019ac8e.png">
+
 ## Overview
 This is a social news and discussion application built using Rails, PostgreSQL,
 and JavaScript. Feel free to try out the application by setting it up on your
