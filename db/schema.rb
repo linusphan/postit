@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_18_230928) do
+ActiveRecord::Schema.define(version: 2019_07_18_233015) do
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 2019_07_18_230928) do
     t.datetime "updated_at", null: false
     t.string "password_digest"
     t.string "role"
+    t.string "time_zone"
   end
 
   create_table "votes", force: :cascade do |t|
