@@ -27,3 +27,5 @@ local machine.
 * can login and logout, as well as register a new user
 * has roles feature with permissions
 * slugs or slugging for URLs
+* add time_zone feature; time_zone will either default to PST or be in time zone
+  user specifies
