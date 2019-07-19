@@ -19,7 +19,7 @@ class PostsController < ApplicationController
     @post.creator = current_user
 
     if @post.save
-      flash[:notice] = "Your post was created."
+      flash[:notice] = 'Your post was created.'
       redirect_to posts_path
     else
       render :new
@@ -31,7 +31,7 @@ class PostsController < ApplicationController
 
   def update
     if @post.update(post_params)
-      flash[:notice] = "This post was updated"
+      flash[:notice] = 'This post was updated'
       redirect_to post_path(@post)
     else
       render :edit
@@ -39,20 +39,26 @@ class PostsController < ApplicationController
   end
 
   def vote
-    @vote = Vote.create(voteable: @post, creator: current_user, vote: params[:vote])
+    vote = Vote.create(voteable: @post, creator: current_user, vote: params[:vote])
 
     respond_to do |format|
       format.html do
-        if @vote.valid?
-          flash[:notice] = "Your vote was counted."
+        if vote.valid?
+          flash[:notice] = 'Your vote was counted.'
         else
-          flash[:error] = "You can only vote on a post once."
+          flash[:error] = 'You can only vote on a post once.'
         end
 
         redirect_back(fallback_location: root_path)
       end
 
-      format.js
+      format.js do
+        if vote.valid?
+          flash.now[:notice] = 'Your vote was counted.'
+        else
+          flash.now[:error] = "You can't vote on that more than once"
+        end
+      end
     end
   end
 
