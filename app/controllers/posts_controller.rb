@@ -56,7 +56,7 @@ class PostsController < ApplicationController
         if vote.valid?
           flash.now[:notice] = 'Your vote was counted.'
         else
-          flash.now[:error] = "You can't vote on that more than once"
+          flash.now[:error] = "You can't vote on that more than once."
         end
       end
     end

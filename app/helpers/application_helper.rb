@@ -21,7 +21,7 @@ module ApplicationHelper
 
     flash.each do |name, msg|
       if msg.is_a?(String)
-        flash_div = "<div class=\"alert alert-#{name == :notice ? 'success' : 'error'} ajax_flash\"><a class=\"close\" data-dismiss=\"alert\">&#215;</a> <div id=\"flash_#{name == :notice ? 'notice' : 'error'}\">#{h(msg)}</div></div>"
+        flash_div = "<div class=\"alert alert-#{name == 'notice' ? 'success' : 'error'} ajax_flash\"><a class=\"close\" data-dismiss=\"alert\">&#215;</a> <div id=\"flash_#{name == :notice ? 'notice' : 'error'}\">#{h(msg)}</div></div>"
       end
     end
 
