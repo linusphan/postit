@@ -29,3 +29,4 @@ local machine.
 * slugs or slugging for URLs
 * add time_zone feature; time_zone will either default to PST or be in time zone
   user specifies
+* Two factor authentication with Twilio
