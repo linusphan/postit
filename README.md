@@ -30,3 +30,4 @@ local machine.
 * add time_zone feature; time_zone will either default to PST or be in time zone
   user specifies
 * Two factor authentication
+* Pagination
