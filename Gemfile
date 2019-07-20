@@ -13,6 +13,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass', '~> 2.3.2.0'
 gem 'bcrypt-ruby'
 gem 'voteable_linus', '~> 0.0.0'
+gem 'twilio-ruby'
 
 group :doc do
   gem 'sdoc', require: false

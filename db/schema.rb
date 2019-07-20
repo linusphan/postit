@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_19_020335) do
+ActiveRecord::Schema.define(version: 2019_07_20_073749) do
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
@@ -52,6 +52,8 @@ ActiveRecord::Schema.define(version: 2019_07_19_020335) do
     t.string "role"
     t.string "time_zone"
     t.string "slug"
+    t.string "pin"
+    t.string "phone"
   end
 
   create_table "votes", force: :cascade do |t|
