@@ -1,4 +1,4 @@
-<img width="1125" alt="postit" src="https://user-images.githubusercontent.com/13613724/61484631-27b48600-a954-11e9-82fb-fbf4e5c24442.png">
+![postit](https://user-images.githubusercontent.com/13613724/61578136-c6e99280-aaa6-11e9-85f6-d1b20ef95f69.png)
 
 ## Overview
 This is a social news and discussion application built using Rails, PostgreSQL,
